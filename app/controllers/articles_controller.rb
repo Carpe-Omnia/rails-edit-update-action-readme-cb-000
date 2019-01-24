@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     @article.title = params[:title]
     @article.description = params[:description]
     @article.save
-    redirect_to article_path(@article)
+    redirect_to articles_path(@article)
   end
 
   def edit
